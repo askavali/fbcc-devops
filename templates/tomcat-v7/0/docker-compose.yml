@@ -7,19 +7,19 @@ services:
     image: andrefernandes/docker-tomcat7:latest
     container_name: Tomcat7
     ports: 
-      - "8080:8081"
+      - "8080:8085"
 #      - "1315:1315"
 #    volumes:
 #      - /opt/workspace:/workspace
-    environment:
-      - DB_HOST=${DB_HOST}
-      - DB_SID=${DB_SID}
-      - DB_MSCHEMA=${DB_MSCHEMA}
-      - DB_ASCHEMA=${DB_ASCHEMA}
-      - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}
-      - ORADATA_PATH=${ORADATA_PATH}
-      - DB_INIT=${DB_INIT}
+#    environment:
+#      - DB_HOST=${DB_HOST}
+#      - DB_SID=${DB_SID}
+#      - DB_MSCHEMA=${DB_MSCHEMA}
+#      - DB_ASCHEMA=${DB_ASCHEMA}
+#      - DB_USER=${DB_USER}
+#      - DB_PASSWORD=${DB_PASSWORD}
+#      - ORADATA_PATH=${ORADATA_PATH}
+#      - DB_INIT=${DB_INIT}
 #      - MPM_DIR=fbpm
 #      - ELS_HCARE=${ELS_HCARE}
 #      - ELS_HVOL=${ELS_HVOL}
@@ -29,8 +29,8 @@ services:
 #    extra_hosts:
 #      - "elsd-1-1315:10.240.181.35"
     restart: always
-    labels:
-      docker-tomcat7:host_label: host=${MPM_HOST}
+#    labels:
+#      docker-tomcat7:host_label: host=${MPM_HOST}
 
 #  mq-mpm:
 #    image: wailord.finastra.io:444/ibmmq/ibmmq8-mpm
