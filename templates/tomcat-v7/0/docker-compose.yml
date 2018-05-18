@@ -7,7 +7,7 @@ services:
     image: andrefernandes/docker-tomcat7:latest
     container_name: Tomcat7
     ports: 
-      - "8080:8085"
+      - "8085:8080"
 #      - "1315:1315"
 #    volumes:
 #      - /opt/workspace:/workspace
