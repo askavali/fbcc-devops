@@ -4,7 +4,7 @@ services:
   fbcc-tomcat:
 #    depends_on: 
 #      - mq-mpm
-    image: andrefernandes/docker-tomcat7:latest
+    image: registry.misys.global.ad/askavali/tomcat7:565
     container_name: Tomcat7
     ports: 
       - "8085:8080"
